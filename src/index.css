@@ -230,3 +230,32 @@ section {
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* CONTACT SECTION STYLES */
+
+.contact {
+  max-width: 750px;
+}
+
+.contact h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* FOOTER STYLES */
+
+.site-footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}

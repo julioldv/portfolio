@@ -22,9 +22,11 @@ function ProjectCard({ project }: ProjectCardProps) {
           Live Demo
         </a>
 
-        <a href={project.githubUrl} target="_blank" rel="noreferrer">
-          GitHub
-        </a>
+        {project.githubUrl && (
+            <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                GitHub
+            </a>
+            )}
       </div>
     </article>
   )

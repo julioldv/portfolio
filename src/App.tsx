@@ -91,13 +91,44 @@ function App() {
           </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" className="contact">
           <h2>Contact</h2>
-          <p>You can find me on GitHub and LinkedIn.</p>
+
+          <p>
+            I'm open to junior software development opportunities and would be happy
+            to connect.
+          </p>
+
+          <div className="contact-links">
+            <a
+              className="button primary-button"
+              href="mailto:julioldv@gmail.com"
+            >
+              Email Me
+            </a>
+
+            <a
+              className="button secondary-button"
+              href="https://www.linkedin.com/in/juliolugodev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              className="button secondary-button"
+              href="https://github.com/julioldv"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </section>
       </main>
 
-      <footer>
+      <footer className="site-footer">
         <p>© 2026 Julio Lugo</p>
       </footer>
     </>
