@@ -84,7 +84,7 @@ section {
   text-decoration: underline;
 }
 
-/* HERO STYLES */
+/* HERO SECTION STYLES */
 
 .hero {
   min-height: 75vh;
@@ -144,4 +144,39 @@ section {
 
 .button:hover {
   opacity: 0.85;
+}
+
+/* ABOUT SECTION STYLES */
+
+.about {
+  max-width: 750px;
+}
+
+.about h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+/* SKILLS SECTION STYLES */
+
+.skills h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills-list li {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }

@@ -47,24 +47,34 @@ function App() {
           </div>
         </section>
 
-        <section id="about">
+        <section id="about" className="about">
           <h2>About Me</h2>
+
           <p>
-            Computer Engineering graduate focused on web development and
-            building practical software projects.
+            I'm a Computer Engineering graduate focused on software and web
+            development. I enjoy building practical projects, learning new
+            technologies, and improving my skills through hands-on development.
+          </p>
+
+          <p>
+            I'm currently focused on JavaScript, TypeScript, React, and modern web
+            development while preparing for my first professional software
+            development role.
           </p>
         </section>
 
-        <section id="skills">
+        <section id="skills" className="skills">
           <h2>Skills</h2>
 
-          <ul>
+          <ul className="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>React</li>
-            <li>HTML</li>
-            <li>CSS</li>
             <li>Git</li>
+            <li>GitHub</li>
+            <li>Jest / Vitest</li>
           </ul>
         </section>
 
