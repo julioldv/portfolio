@@ -4,7 +4,7 @@ My personal developer portfolio, built to showcase my projects, technical skills
 
 ## Live Demo
 
-[View the portfolio](https://portfolio-nu-lake-39.vercel.app/)
+[View the portfolio](https://portfolio-jcl-298d.vercel.app/)
 
 ## Built With
 
