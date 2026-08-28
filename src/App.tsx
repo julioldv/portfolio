@@ -1,23 +1,50 @@
 function App() {
   return (
     <>
-      <header>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+      <header className="site-header">
+        <nav className="navbar">
+          <a className="logo" href="#home">
+            Julio Lugo
+          </a>
+
+          <ul className="nav-links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
       <main>
-        <section id="home">
+        <section id="home" className="hero">
+          <p className="hero-intro">Hi, I'm</p>
+
           <h1>Julio Lugo</h1>
-          <p>Junior Software Developer</p>
-          <p>
+
+          <h2>Junior Software Developer</h2>
+
+          <p className="hero-description">
             I build web applications with JavaScript, TypeScript, and React.
           </p>
+
+          <div className="hero-actions">
+            <a className="button primary-button" href="#projects">
+              View Projects
+            </a>
+
+            <a className="button secondary-button" href="#contact">
+              Contact Me
+            </a>
+          </div>
         </section>
 
         <section id="about">
