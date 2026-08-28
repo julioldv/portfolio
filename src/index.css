@@ -47,6 +47,10 @@ main {
 section {
   padding-block: 4rem;
 }
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
 
 /* NAVBAR STYLES */
 
@@ -82,13 +86,14 @@ section {
 
 .nav-links a:hover {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* HERO SECTION STYLES */
 
 .hero {
   min-height: 75vh;
-
+  max-width: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,6 +136,10 @@ section {
   border: 1px solid #222;
   border-radius: 5px;
   font-weight: 600;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
 }
 
 .primary-button {
@@ -152,21 +161,12 @@ section {
   max-width: 750px;
 }
 
-.about h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
-
 .about p {
   margin-bottom: 1rem;
 }
 
 /* SKILLS SECTION STYLES */
 
-.skills h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
 
 .skills-list {
   display: flex;
@@ -183,11 +183,6 @@ section {
 
   /* PROJECTS STYLES */
 
-  .projects h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -199,6 +194,11 @@ section {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
 }
 
 .project-card h3 {
@@ -235,11 +235,6 @@ section {
 
 .contact {
   max-width: 750px;
-}
-
-.contact h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
 }
 
 .contact p {
@@ -304,4 +299,11 @@ section {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* ACCESSIBILITY STYLES */
+
+a:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 4px;
 }

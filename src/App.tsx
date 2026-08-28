@@ -51,7 +51,7 @@ function App() {
         </section>
 
         <section id="about" className="about">
-          <h2>About Me</h2>
+          <h2 className="section-title">About Me</h2>
 
           <p>
             I'm a Computer Engineering graduate focused on software and web
@@ -67,7 +67,7 @@ function App() {
         </section>
 
         <section id="skills" className="skills">
-          <h2>Skills</h2>
+          <h2 className="section-title">Skills</h2>
 
           <ul className="skills-list">
             <li>HTML</li>
@@ -82,7 +82,7 @@ function App() {
         </section>
 
         <section id="projects" className="projects">
-          <h2>Projects</h2>
+          <h2 className="section-title">Projects</h2>
 
           <div className="projects-grid">
             {projects.map((project) => (
@@ -92,7 +92,7 @@ function App() {
         </section>
 
         <section id="contact" className="contact">
-          <h2>Contact</h2>
+          <h2 className="section-title">Contact</h2>
 
           <p>
             I'm open to junior software development opportunities and would be happy
