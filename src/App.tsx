@@ -1,3 +1,6 @@
+import ProjectCard from './components/ProjectCard'
+import { projects } from './data/projects'
+
 function App() {
   return (
     <>
@@ -78,23 +81,14 @@ function App() {
           </ul>
         </section>
 
-        <section id="projects">
+        <section id="projects" className="projects">
           <h2>Projects</h2>
 
-          <article>
-            <h3>Shopping Cart</h3>
-            <p>React and TypeScript shopping cart application.</p>
-          </article>
-
-          <article>
-            <h3>Battleship</h3>
-            <p>JavaScript Battleship game built with test-driven development.</p>
-          </article>
-
-          <article>
-            <h3>CV Application</h3>
-            <p>React application for creating and editing a CV.</p>
-          </article>
+          <div className="projects-grid">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
         </section>
 
         <section id="contact">
