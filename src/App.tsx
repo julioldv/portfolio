@@ -33,7 +33,7 @@ function App() {
 
           <h1>Julio Lugo</h1>
 
-          <h2>Junior Software Developer</h2>
+          <h2>Junior Frontend Developer</h2>
 
           <p className="hero-description">
             I build web applications with JavaScript, TypeScript, and React.
