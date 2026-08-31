@@ -23,6 +23,7 @@ export const projects: Project[] = [
       'A browser-based Battleship game built with JavaScript using test-driven development.',
     technologies: ['JavaScript', 'Jest', 'Webpack'],
     githubUrl: 'https://github.com/julioldv/battleship-js',
+    liveUrl: 'https://julioldv.github.io/battleship-js/'
   },
   {
     id: 3,
