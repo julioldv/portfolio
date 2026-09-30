@@ -1,5 +1,5 @@
-import ProjectCard from './components/ProjectCard'
-import { projects } from './data/projects'
+import ProjectCard from "./components/ProjectCard";
+import { projects } from "./data/projects";
 
 function App() {
   return (
@@ -29,23 +29,29 @@ function App() {
 
       <main>
         <section id="home" className="hero">
-          <p className="hero-intro">Hi, I'm</p>
+          <p className="hero-eyebrow">Software Developer</p>
 
-          <h1>Julio Lugo</h1>
-
-          <h2>Junior Software Developer</h2>
+          <h1>
+            Hi, I'm <span>Julio Lugo.</span>
+          </h1>
 
           <p className="hero-description">
-            I build web applications with JavaScript, TypeScript, and React.
+            Computer Engineering graduate building modern web applications with
+            React, TypeScript, and JavaScript.
           </p>
 
           <div className="hero-actions">
             <a className="button primary-button" href="#projects">
-              View Projects
+              View My Work
             </a>
 
-            <a className="button secondary-button" href="#contact">
-              Contact Me
+            <a
+              className="button secondary-button"
+              href="https://github.com/julioldv"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
             </a>
           </div>
         </section>
@@ -132,7 +138,7 @@ function App() {
         <p>© 2026 Julio Lugo</p>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
