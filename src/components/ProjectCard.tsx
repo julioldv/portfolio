@@ -25,10 +25,10 @@ function ProjectCard({ project }: ProjectCardProps) {
         )}
 
         {project.githubUrl && (
-            <a href={project.githubUrl} target="_blank" rel="noreferrer">
-                GitHub
-            </a>
-            )}
+          <a href={project.githubUrl} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        )}
       </div>
     </article>
   )

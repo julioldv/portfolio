@@ -8,29 +8,29 @@ My personal developer portfolio, built to showcase my projects, technical skills
 
 ## Built With
 
-* React
-* TypeScript
-* Vite
-* CSS
-* Vercel
+- React
+- TypeScript
+- Vite
+- CSS
+- Vercel
 
 ## Features
 
-* Responsive single-page layout
-* About and skills sections
-* Reusable project cards
-* Links to live projects and GitHub repositories
-* Contact links for email, LinkedIn, and GitHub
-* Responsive design for desktop and mobile devices
+- Responsive single-page layout
+- About and skills sections
+- Reusable project cards
+- Links to live projects and GitHub repositories
+- Contact links for email, LinkedIn, and GitHub
+- Responsive design for desktop and mobile devices
 
 ## Featured Projects
 
 The portfolio currently highlights some of my main projects, including:
 
-* **Shopping Cart** — E-commerce interface built with React and TypeScript
-* **Battleship** — JavaScript Battleship game developed using test-driven development
-* **CV Application** — React application for creating and editing CV information
-* **Hotel Santa Prisca Website** — Responsive website developed for a real hotel client
+- **Shopping Cart** — E-commerce interface built with React and TypeScript
+- **Battleship** — JavaScript Battleship game developed using test-driven development
+- **CV Application** — React application for creating and editing CV information
+- **Hotel Santa Prisca Website** — Responsive website developed for a real hotel client
 
 ## Running Locally
 
@@ -62,11 +62,11 @@ npm run dev
 
 This project gave me additional practice with:
 
-* Structuring a React application with reusable components
-* Defining data structures with TypeScript
-* Rendering collections using React
-* Building responsive layouts with CSS Grid, Flexbox, and media queries
-* Deploying a Vite application with Vercel
+- Structuring a React application with reusable components
+- Defining data structures with TypeScript
+- Rendering collections using React
+- Building responsive layouts with CSS Grid, Flexbox, and media queries
+- Deploying a Vite application with Vercel
 
 ## Future Improvements
 

@@ -60,8 +60,8 @@ function App() {
           </p>
 
           <p>
-            I'm currently focused on JavaScript, TypeScript, React, and modern web
-            development while preparing for my first professional software
+            I'm currently focused on JavaScript, TypeScript, React, and modern
+            web development while preparing for my first professional software
             development role.
           </p>
         </section>
@@ -95,8 +95,8 @@ function App() {
           <h2 className="section-title">Contact</h2>
 
           <p>
-            I'm open to junior software development opportunities and would be happy
-            to connect.
+            I'm open to junior software development opportunities and would be
+            happy to connect.
           </p>
 
           <div className="contact-links">
