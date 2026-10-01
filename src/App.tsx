@@ -57,34 +57,73 @@ function App() {
         </section>
 
         <section id="about" className="about">
-          <h2 className="section-title">About Me</h2>
+          <div className="section-heading">
+            <p className="section-eyebrow">About Me</p>
+            <h2 className="section-title">
+              I enjoy turning ideas into practical web experiences.
+            </h2>
+          </div>
 
-          <p>
-            I'm a Computer Engineering graduate focused on software and web
-            development. I enjoy building practical projects, learning new
-            technologies, and improving my skills through hands-on development.
-          </p>
+          <div className="about-content">
+            <p>
+              I'm a Computer Engineering graduate focused on software and web
+              development. I build responsive applications with JavaScript,
+              TypeScript, and React, with an emphasis on clean interfaces and
+              maintainable code.
+            </p>
 
-          <p>
-            I'm currently focused on JavaScript, TypeScript, React, and modern
-            web development while preparing for my first professional software
-            development role.
-          </p>
+            <p>
+              I also enjoy testing, working with Git, and improving projects
+              iteratively—from planning and implementation to debugging and
+              deployment.
+            </p>
+          </div>
         </section>
 
         <section id="skills" className="skills">
-          <h2 className="section-title">Skills</h2>
+          <div className="section-heading">
+            <p className="section-eyebrow">Technical Skills</p>
+            <h2 className="section-title">
+              Tools I use to build and ship projects.
+            </h2>
+          </div>
 
-          <ul className="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Jest / Vitest</li>
-          </ul>
+          <div className="skills-grid">
+            <div className="skill-group">
+              <h3>Frontend</h3>
+
+              <ul className="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>React Router</li>
+              </ul>
+            </div>
+
+            <div className="skill-group">
+              <h3>Testing</h3>
+
+              <ul className="skills-list">
+                <li>Jest</li>
+                <li>Vitest</li>
+                <li>React Testing Library</li>
+              </ul>
+            </div>
+
+            <div className="skill-group">
+              <h3>Tools</h3>
+
+              <ul className="skills-list">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Vite</li>
+                <li>Webpack</li>
+                <li>npm</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section id="projects" className="projects">
