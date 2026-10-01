@@ -1,5 +1,5 @@
-import ProjectCard from "./components/ProjectCard";
-import { projects } from "./data/projects";
+import ProjectCard from './components/ProjectCard'
+import { projects } from './data/projects'
 
 function App() {
   return (
@@ -138,7 +138,7 @@ function App() {
         <p>© 2026 Julio Lugo</p>
       </footer>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

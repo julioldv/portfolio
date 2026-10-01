@@ -1,46 +1,83 @@
+import shoppingCartImage from "../assets/projects/shopping-cart.png";
+import battleshipImage from "../assets/projects/battleship.png";
+import cvApplicationImage from "../assets/projects/cv-application.png";
+import hotelSantaPriscaImage from "../assets/projects/hotel-santa-prisca.png";
+
 export type Project = {
-  id: number
-  title: string
-  description: string
-  technologies: string[]
-  githubUrl?: string
-  liveUrl?: string
-}
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  imageAlt: string;
+  liveUrl: string;
+  githubUrl?: string;
+  featured?: boolean;
+  type: "personal" | "client";
+  imageFit?: "cover" | "contain";
+};
 export const projects: Project[] = [
   {
-    id: 1,
-    title: 'Shopping Cart',
+    id: "shopping-cart",
+    title: "Shopping Cart",
     description:
-      'An e-commerce interface built with React and TypeScript featuring product browsing, cart management, and routing.',
-    technologies: ['React', 'TypeScript', 'React Router', 'Vitest'],
-    githubUrl: 'https://github.com/julioldv/shopping-cart',
-    liveUrl: 'https://shopping-cart-jcl-298d.vercel.app/',
+      "An e-commerce application with product browsing, cart state management, routing, quantity controls, and interaction testing.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "React Router",
+      "Vitest",
+      "React Testing Library",
+    ],
+    image: shoppingCartImage,
+    imageAlt:
+      "Shopping Cart application displaying a responsive product catalog",
+    githubUrl: "https://github.com/julioldv/shopping-cart",
+    liveUrl: "https://shopping-cart-jcl-298d.vercel.app/",
+    featured: true,
+    type: "personal",
+    imageFit: "cover",
   },
   {
-    id: 2,
-    title: 'Battleship',
+    id: "battleship",
+    title: "Battleship",
     description:
-      'A browser-based Battleship game built with JavaScript using test-driven development.',
-    technologies: ['JavaScript', 'Jest', 'Webpack'],
-    githubUrl: 'https://github.com/julioldv/battleship-js',
-    liveUrl: 'https://julioldv.github.io/battleship-js/',
+      "A browser-based Battleship game developed with test-driven development, separating game logic from the user interface.",
+    technologies: ["JavaScript", "Jest", "Webpack"],
+    image: battleshipImage,
+    imageAlt: "Battleship game showing the player fleet and enemy game boards",
+    githubUrl: "https://github.com/julioldv/battleship-js",
+    liveUrl: "https://julioldv.github.io/battleship-js/",
+    type: "personal",
+    imageFit: "contain",
   },
   {
-    id: 3,
-    title: 'CV Application',
+    id: "cv-application",
+    title: "CV Application",
     description:
-      'A React application that lets users enter, preview, and edit information for a CV.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    githubUrl: 'https://github.com/julioldv/cv-application',
-    liveUrl: 'https://cv-application-six-pi.vercel.app/',
+      "A React application that lets users enter, preview, and edit CV information through an interactive form-based workflow.",
+    technologies: ["React", "JavaScript", "CSS"],
+    image: cvApplicationImage,
+    imageAlt:
+      "CV Application displaying a generated résumé preview with education and experience",
+    githubUrl: "https://github.com/julioldv/cv-application",
+    liveUrl: "https://cv-application-six-pi.vercel.app/",
+    type: "personal",
+    imageFit: "cover",
   },
   {
-    id: 4,
-    title: 'Hotel Santa Prisca Website',
+    id: "hotel-santa-prisca",
+    title: "Hotel Santa Prisca",
     description:
-      'A responsive website built for a real hotel client, including bilingual content, image optimization, redirects, and ongoing maintenance.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/julioldv/hotel-santa-prisca',
-    liveUrl: 'https://hotelsantaprisca.com.mx',
+      "A responsive bilingual website developed for a real hotel client, including image optimization, redirects, and ongoing maintenance.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: hotelSantaPriscaImage,
+    imageAlt:
+      "Hotel Santa Prisca website displaying hotel information and room photography",
+    githubUrl: "https://github.com/julioldv/hotel-santa-prisca",
+    liveUrl: "https://hotelsantaprisca.com.mx",
+    featured: true,
+    type: "client",
+    imageFit: "cover",
   },
-]
+];
