@@ -1,11 +1,14 @@
-import ProjectCard from './components/ProjectCard'
-import { projects } from './data/projects'
+import ProjectCard from "./components/ProjectCard";
+import { projects } from "./data/projects";
 
 function App() {
   return (
     <>
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <header className="site-header">
-        <nav className="navbar">
+        <nav className="navbar" aria-label="Main navigation">
           <a className="logo" href="#home">
             Julio Lugo
           </a>
@@ -14,14 +17,19 @@ function App() {
             <li>
               <a href="#about">About</a>
             </li>
+
             <li>
               <a href="#skills">Skills</a>
             </li>
+
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">Work</a>
             </li>
+
             <li>
-              <a href="#contact">Contact</a>
+              <a className="nav-contact" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -29,56 +37,101 @@ function App() {
 
       <main>
         <section id="home" className="hero">
-          <p className="hero-intro">Hi, I'm</p>
+          <p className="hero-eyebrow">Software Developer</p>
 
-          <h1>Julio Lugo</h1>
-
-          <h2>Junior Software Developer</h2>
+          <h1>
+            Hi, I'm <span>Julio Lugo.</span>
+          </h1>
 
           <p className="hero-description">
-            I build web applications with JavaScript, TypeScript, and React.
+            Computer Engineering graduate building modern web applications with
+            React, TypeScript, and JavaScript.
           </p>
 
           <div className="hero-actions">
             <a className="button primary-button" href="#projects">
-              View Projects
+              View My Work
             </a>
 
-            <a className="button secondary-button" href="#contact">
-              Contact Me
+            <a
+              className="button secondary-button"
+              href="https://github.com/julioldv"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
             </a>
           </div>
         </section>
 
         <section id="about" className="about">
-          <h2 className="section-title">About Me</h2>
+          <div className="section-heading">
+            <p className="section-eyebrow">About Me</p>
+            <h2 className="section-title">
+              I enjoy turning ideas into practical web experiences.
+            </h2>
+          </div>
 
-          <p>
-            I'm a Computer Engineering graduate focused on software and web
-            development. I enjoy building practical projects, learning new
-            technologies, and improving my skills through hands-on development.
-          </p>
+          <div className="about-content">
+            <p>
+              I'm a Computer Engineering graduate focused on software and web
+              development. I build responsive applications with JavaScript,
+              TypeScript, and React, with an emphasis on clean interfaces and
+              maintainable code.
+            </p>
 
-          <p>
-            I'm currently focused on JavaScript, TypeScript, React, and modern web
-            development while preparing for my first professional software
-            development role.
-          </p>
+            <p>
+              I also enjoy testing, working with Git, and improving projects
+              iteratively—from planning and implementation to debugging and
+              deployment.
+            </p>
+          </div>
         </section>
 
         <section id="skills" className="skills">
-          <h2 className="section-title">Skills</h2>
+          <div className="section-heading">
+            <p className="section-eyebrow">Technical Skills</p>
+            <h2 className="section-title">
+              Tools I use to build and ship projects.
+            </h2>
+          </div>
 
-          <ul className="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Jest / Vitest</li>
-          </ul>
+          <div className="skills-grid">
+            <div className="skill-group">
+              <h3>Frontend</h3>
+
+              <ul className="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>React Router</li>
+              </ul>
+            </div>
+
+            <div className="skill-group">
+              <h3>Testing</h3>
+
+              <ul className="skills-list">
+                <li>Jest</li>
+                <li>Vitest</li>
+                <li>React Testing Library</li>
+              </ul>
+            </div>
+
+            <div className="skill-group">
+              <h3>Tools</h3>
+
+              <ul className="skills-list">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Vite</li>
+                <li>Webpack</li>
+                <li>npm</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section id="projects" className="projects">
@@ -92,47 +145,55 @@ function App() {
         </section>
 
         <section id="contact" className="contact">
-          <h2 className="section-title">Contact</h2>
+          <div className="contact-content">
+            <p className="section-eyebrow">Contact</p>
 
-          <p>
-            I'm open to junior software development opportunities and would be happy
-            to connect.
-          </p>
+            <h2 className="section-title">Let’s build something useful.</h2>
 
-          <div className="contact-links">
-            <a
-              className="button primary-button"
-              href="mailto:julioldv@gmail.com"
-            >
-              Email Me
-            </a>
+            <p className="contact-description">
+              I'm open to junior software development opportunities and would be
+              happy to connect about roles, projects, or collaboration.
+            </p>
 
-            <a
-              className="button secondary-button"
-              href="https://www.linkedin.com/in/juliolugodev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
+            <div className="contact-links">
+              <a
+                className="button primary-button"
+                href="mailto:julioldv@gmail.com"
+              >
+                Email Me
+              </a>
 
-            <a
-              className="button secondary-button"
-              href="https://github.com/julioldv"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
+              <a
+                className="button secondary-button"
+                href="https://www.linkedin.com/in/juliolugodev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                className="button secondary-button"
+                href="https://github.com/julioldv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <p>© 2026 Julio Lugo</p>
+        <div className="footer-content">
+          <p>© 2026 Julio Lugo</p>
+
+          <a href="#home">Back to top ↑</a>
+        </div>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
