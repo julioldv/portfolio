@@ -1,11 +1,11 @@
-import ProjectCard from './components/ProjectCard'
-import { projects } from './data/projects'
+import ProjectCard from "./components/ProjectCard";
+import { projects } from "./data/projects";
 
 function App() {
   return (
     <>
       <header className="site-header">
-        <nav className="navbar">
+        <nav className="navbar" aria-label="Main navigation">
           <a className="logo" href="#home">
             Julio Lugo
           </a>
@@ -14,14 +14,19 @@ function App() {
             <li>
               <a href="#about">About</a>
             </li>
+
             <li>
               <a href="#skills">Skills</a>
             </li>
+
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">Work</a>
             </li>
+
             <li>
-              <a href="#contact">Contact</a>
+              <a className="nav-contact" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -137,47 +142,55 @@ function App() {
         </section>
 
         <section id="contact" className="contact">
-          <h2 className="section-title">Contact</h2>
+          <div className="contact-content">
+            <p className="section-eyebrow">Contact</p>
 
-          <p>
-            I'm open to junior software development opportunities and would be
-            happy to connect.
-          </p>
+            <h2 className="section-title">Let’s build something useful.</h2>
 
-          <div className="contact-links">
-            <a
-              className="button primary-button"
-              href="mailto:julioldv@gmail.com"
-            >
-              Email Me
-            </a>
+            <p className="contact-description">
+              I'm open to junior software development opportunities and would be
+              happy to connect about roles, projects, or collaboration.
+            </p>
 
-            <a
-              className="button secondary-button"
-              href="https://www.linkedin.com/in/juliolugodev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
+            <div className="contact-links">
+              <a
+                className="button primary-button"
+                href="mailto:julioldv@gmail.com"
+              >
+                Email Me
+              </a>
 
-            <a
-              className="button secondary-button"
-              href="https://github.com/julioldv"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
+              <a
+                className="button secondary-button"
+                href="https://www.linkedin.com/in/juliolugodev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                className="button secondary-button"
+                href="https://github.com/julioldv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <p>© 2026 Julio Lugo</p>
+        <div className="footer-content">
+          <p>© 2026 Julio Lugo</p>
+
+          <a href="#home">Back to top ↑</a>
+        </div>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
