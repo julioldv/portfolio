@@ -68,6 +68,28 @@ section {
   font-size: 2rem;
 }
 
+/* SKIP LINK STYLES */
+
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 200;
+
+  padding: 0.75rem 1rem;
+
+  color: #fff;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-sm);
+
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 /* GENERAL SECTION-HEADING STYLES */
 
 .section-heading {
@@ -646,7 +668,22 @@ section {
 
 /* ACCESSIBILITY STYLES */
 
-a:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 4px;
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

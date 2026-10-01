@@ -4,6 +4,9 @@ import { projects } from "./data/projects";
 function App() {
   return (
     <>
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <header className="site-header">
         <nav className="navbar" aria-label="Main navigation">
           <a className="logo" href="#home">
